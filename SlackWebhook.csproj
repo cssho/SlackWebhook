@@ -7,8 +7,10 @@
     <ToolCommandName>slack-webhook</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>SlackWebhookCli</PackageId>
     <Version>1.0.0</Version>
     <Authors>cssho</Authors>
+    <Company>cssho</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/cssho/SlackWebhook/tree/master</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cssho/SlackWebhook</RepositoryUrl>
