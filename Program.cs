@@ -16,10 +16,8 @@ namespace SlackWebhook
         public async Task Run(string url, string text = null, string channel = null, string userName = null)
         {
             if (text == null)
-            {
-                Console.Write("Text: ");
                 text = Console.ReadLine();
-            }
+
             await new WebhookClient().SendAsync(url, new Payload { Text = text, Channel = channel, UserName = userName });
         }
     }
