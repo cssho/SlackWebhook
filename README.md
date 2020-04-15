@@ -5,7 +5,7 @@ Simple slack webhook client.
 ## Install
 
 ```
-dotnet tool install -g dotnet tool install -g slack-webhook
+dotnet tool install -g dotnet tool install -g SlackWebhookCli
 ```
 
 ## Useage
