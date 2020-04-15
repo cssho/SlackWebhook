@@ -20,4 +20,8 @@
     <PackageReference Include="Slack.Integration" Version="1.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="LICENSE" Pack="true" Visible="false" PackagePath=""/>
+  </ItemGroup>
+
 </Project>
