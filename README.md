@@ -5,13 +5,18 @@ Simple slack webhook client.
 ## Install
 
 ```
-dotnet tool install -g slack-webhook
+dotnet tool install -g dotnet tool install -g slack-webhook
 ```
 
 ## Useage
 
 ```
 $ slack-webhook -url https://hooks.slack.com/services/XXXXX/YYYYY/zzzzzzzzzzzzzzzzzz -text "Hello, Slack!"
+
 $ cat hello.txt | slack-webhook -url https://hooks.slack.com/services/XXXXX/YYYYY/zzzzzzzzzzzzzzzzzz
-$ slack-webhook -url https://hooks.slack.com/services/XXXXX/YYYYY/zzzzzzzzzzzzzzzzzz -text "Hello, Slack!" -channel "#dotnet" -userName "cssho"
+
+$ slack-webhook -url https://hooks.slack.com/services/XXXXX/YYYYY/zzzzzzzzzzzzzzzzzz \
+                -text "Hello, Slack!" \
+                -channel "#dotnet" \
+                -userName "cssho"
 ```
