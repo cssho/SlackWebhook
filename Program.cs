@@ -22,7 +22,7 @@ namespace SlackWebhook
                     var line = Console.ReadLine();
 
                     if (line == null) break;
-                    else text = (text ?? "") + line;
+                    else text = string.Concat((text ?? ""), line, Environment.NewLine);
                 }
             }
             if (text == null) throw new ArgumentNullException(nameof(text));
