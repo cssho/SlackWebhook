@@ -25,7 +25,10 @@ namespace SlackWebhook
                     else text = string.Concat((text ?? ""), line, Environment.NewLine);
                 }
             }
-            if (text == null) throw new ArgumentNullException(nameof(text));
+            if (string.IsNullOrEmpty(text)) {
+                Console.WriteLine("No text...");
+                return;
+            }
 
             await new WebhookClient().SendAsync(url, new Payload { Text = text, Channel = channel, UserName = userName });
         }
